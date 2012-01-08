@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface GCPlaceholderTextView : UITextView 
+@interface GCPlaceholderTextView : UITextView {
+    CGRect _originalFrame;
+}
 
 @property(nonatomic, retain) NSString *placeholder;
 
